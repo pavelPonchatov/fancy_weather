@@ -1,0 +1,81 @@
+.main__temperature {
+    font-size: 22px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    @media(max-width: 768px) {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+.temperature__number--big {
+    max-width: 330px;
+    max-height: 373px;
+    font-weight: 700;
+    font-size: 306px;
+    line-height: 373px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    @media(max-width: 1024px) {
+        font-size: 250px;
+    }
+    @media(max-width: 768px) {
+        font-size: 300px;
+    }
+    @media(max-width: 500px) {
+        font-size: 200px;
+        line-height: 280px;
+        max-width: initial;
+    }
+}
+.icon--big {
+    width: 300px;
+    height: 270px;
+    position: absolute;
+    top: -90px;
+    left: 315px;
+    @media(max-width: 1024px) {
+        width: 200px;
+        height: 200px;
+        top: -48px;
+    }
+    @media(max-width: 768px) {
+        top: -30px;
+        right: 85px;
+        left: initial;
+    }
+    @media(max-width: 500px) {
+        width: 130px;
+        height: 130px;
+        top: -27px;
+        right: 0px;
+    }
+}
+.temperature__desc {
+    width: 270px;
+    height: 140px;
+    position: absolute;
+    top: 160px;
+    left: 410px;
+    @media(max-width: 1024px) {
+        left: 330px;
+    }
+    @media(max-width: 768px) {
+        right: 0;
+        left: initial;
+    }
+    @media(max-width: 500px) {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        position: initial;
+    }
+}
+.desc__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

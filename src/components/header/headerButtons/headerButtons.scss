@@ -1,0 +1,119 @@
+.button {
+    width: 44px;
+    height: 44px;
+    background: rgba(180,184,187,.7);
+    border-radius: 5px;
+    border: none;
+    padding: 0;
+    outline: none;
+    margin-right: 10px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all .2s;
+}
+.button--update {
+    background: rgba(180,184,187,.5) url("./../../../assets/update-bg.svg") no-repeat bottom;
+    background-size: 44px;
+    transition: ease 0.3s;
+    &:hover {
+        background-color: #b4b8bb;
+    }
+}
+.update-icon {
+    width: 15px;
+    height: 20px;
+    background: url('./../../../assets/update-icon.svg') no-repeat;
+    margin: 0 auto;
+}
+.header-buttons {
+    display: flex;
+    @media(max-width: 500px) {
+        order: 1;
+        justify-content: center;
+    }
+}
+.language-menu {
+    width: 71px;
+    margin-right: 10px;
+    position: relative;
+    & .button {
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: 0;
+        text-align: left;
+        padding-left: 15px;
+        & span {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            
+        }
+    }
+}
+.arrow-down {
+    display: block;
+    width: 10px;
+    height: 6px;
+    background: url("./../../../assets/language-arrow.svg");
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+
+.language-menu {
+    & .drop-down-menu {
+        & .button {
+            padding: 0;
+            text-align: center;
+            border-radius: 0;
+            width: 71px;
+            &:nth-child(3) {
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}
+.arrow--transform {
+    transform: rotate(180deg);
+    transition: all .6s;
+}
+.button--no-border-radius {
+    border-radius: 5px 5px 0 0;
+    transition: all .6s;
+}
+.drop-down-menu {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .6s cubic-bezier(.25,.46,.45,.94),border-radius .2s;
+}
+.drop-down-menu--show {
+    max-height: 132px;
+    height: auto;
+}
+.drop-down-menu__item {
+    text-align: center;
+}
+.inactive {
+    background: rgba(76,82,85,.7);
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    &:hover {
+        background-color: #b4b8bb;
+        color: #fff;
+    }
+}
+.button--F {
+    margin-right: 0;
+    border-radius: 5px 0 0 5px ;
+    font-weight: bold;
+    font-size: 14px;
+}
+.button--C {
+    margin-right: 0;
+    border-radius: 0 5px 5px 0 ;
+    font-weight: bold;
+    font-size: 14px;
+}

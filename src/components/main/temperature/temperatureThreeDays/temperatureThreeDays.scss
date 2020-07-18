@@ -1,0 +1,67 @@
+h5 {
+    margin: 0;
+}
+.days__list {
+
+    display: flex;
+    width: 610px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @media(max-width: 1024px) {
+        width: 530px;
+    }
+    @media(max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
+    @media(max-width: 500px) {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+.day {
+    position: relative;
+    margin: 0;
+}
+
+.wrapper-day {
+ display: flex;
+ @media(max-width: 1024px) {
+    justify-content: center;
+}
+}
+.day__icon {
+    width: 91px;
+    height: 80px;
+    margin-top: 10px;
+    position: absolute;
+    right: -85px;
+    top: 10px;
+    @media(max-width: 1024px) {
+        width: 70px;
+        height: 65px;
+        right: -60px;
+    }
+    @media(max-width: 500px) {
+        right: 25px;
+    }
+    
+}
+.day__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+.day__number {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    text-transform: uppercase;
+    @media(max-width: 1024px) {
+        font-size: 70px;
+    }
+}
